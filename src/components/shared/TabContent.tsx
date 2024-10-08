@@ -1,5 +1,6 @@
 import { FunctionComponent, ReactNode } from "react";
 import Title from "../UI/Title";
+import Button from "../UI/Button";
 
 interface TabContentProps {
     children: ReactNode
@@ -8,9 +9,10 @@ interface TabContentProps {
  
 const TabContent: FunctionComponent<TabContentProps> = ({children, titleIndex}) => {
     return ( 
-        <div className="max-w-[716px]">
+        <div className="max-w-[716px] flex flex-col snap-y">
             <Title size="lg">Контент таба {titleIndex}</Title>
-            <span className="max-h-[367px]">{children}</span>
+            <div className="max-h-[227px] overflow-y-scroll">{children}</div>
+            <Button>Кнопка действия</Button>
         </div> 
     );
 }

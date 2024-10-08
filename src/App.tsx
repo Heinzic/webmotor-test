@@ -35,7 +35,6 @@ function App() {
           }}>
             <TabTitle titleIndex={index+1} key={index}>{tab.text}</TabTitle>
           </div>
-          
         ))}
       </div>
       <TabContent titleIndex={selectedTabIndex} children={selectedTabContent}/>
