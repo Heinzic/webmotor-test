@@ -34,7 +34,7 @@ function App() {
     <Container>
       <div className={`flex flex-col gap-[30px] mx-[10px] text-[${width > 1023 ? '18px ' : '12px'}]`}>
         {tabsText.map((tab, index) => (
-          <div className="hover:text-white hover:bg-[#0078EE] px-[20px] py-[25px] bg-[#F2F0F0] flex" onClick={() => {
+          <div className="hover:text-white hover:bg-[#0078EE] px-[20px] py-[25px] bg-[#F2F0F0] flex group" onClick={() => {
             setSelectedTabContent(<tab.content/>)
             setSelectedTabIndex(index+1)
           }}>

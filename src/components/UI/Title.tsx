@@ -21,7 +21,9 @@ const Title: FunctionComponent<TitleProps> = ({children, size}) => {
 
     return ( 
         <h1 className={titleSize[size]}>
-            {children}
+            <span className="font-medium">
+                {children}
+            </span>
         </h1>
      );
 }
