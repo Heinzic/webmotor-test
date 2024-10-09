@@ -6,7 +6,7 @@ interface ContainerProps {
  
 const Container: FunctionComponent<ContainerProps> = ({children}) => {
     return ( 
-        <div className="max-w-[1478px] w-100% h-100% mx-auto flex gap-[45px] mt-[20px]">
+        <div className="max-w-[1478px] h-100% lg:mx-auto flex justify-around gap-[45px] mt-[20px] flex-wrap lg:flex-nowrap md:mx-[10px]">
             {children}
         </div>
      );
