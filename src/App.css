@@ -2,25 +2,24 @@
 
 * {
     font-family: 'Cera Pro';
+    /* scrollbar-width: thin;
+    scrollbar-color: #0078EE #ADB6BF66; */
 }
 
 ::-webkit-scrollbar {
-    width: 4px;
+    width: 9px;
+    border-radius: 5px;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
-    background: #f1f1f1;
+    background: #ADB6BF66;
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
     background: #0078EE;
     border-radius: 5px;
-    height: 10px;
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     --tw-bg-opacity: 1;
     background-color: rgb(59 130 246 / var(--tw-bg-opacity))
